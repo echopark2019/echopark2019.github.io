@@ -1,0 +1,69 @@
+public class BasicMath{
+
+	public int Add (int x, int y)  {
+
+		return x + y;
+
+ 	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+public class EmilioMath: BasicMath{
+
+	public int Multiply (int x, int y) {
+
+		return x * y;
+
+	}
+}
+
+
+BasicMath class: Add () method
+
+EmilioMath class: Multiply () method
+
+	               Add () method too. because of the inheritance
+
+(with refernce to EmilioClass) Derived Class (extends the Base class: we could add more class members to extend the orginial capabilities)
+
+(with refernce ti BasicMath) Base Class	
+
+Differnet "Types" in the .NET Framework:
+
+Classes
+
+Interfaces
+Structures
+Enumerations
+Delegates
+
+interface IGarciaMath {
+
+	public int Cube (int x);
+ }
+
+(with reference to Cube)- We have a method named Cube and its signature but there's no implementation
+
+(with reference to (:) ) - The Savany class implements the IGarciaMath interface: it means that Savany is obeying the contract established with the
+ interface by implementing (writing code) the Cube() method. To fully obey the contract Savany has to implement every single property or method
+that is on the interface.
+
+"Services" WCF is coded with interfaces and classes
+
+By convention: I ___for Interfaces.
+
+*take aways interfaces(concept) classes are applied in different portions of web developing
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+public class Savany: IGarciaMath {
+
+	public int Cube (int x) {
+
+		return x*x*x;
+	}
+}
+
+
